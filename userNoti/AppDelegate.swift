@@ -49,8 +49,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func configureUserNotifications(){
+        
+        //액션 추가
+        let favAction = UNNotificationAction(identifier: "confirm", title: "😃 맘에드나요?", options: [])
+        let dismissAction = UNNotificationAction(identifier: "dismiss", title: "마음에 들지 않아요!", options: [])
+        
+        
         //커스텀 형태의 notification 만들기
-        let catagory = UNNotificationCategory(identifier: "myNotificationCategory", actions: [], intentIdentifiers: [], options: [])
+        let catagory = UNNotificationCategory(identifier: "myNotificationCategory", actions: [favAction, dismissAction], intentIdentifiers: [], options: [])
+        
         //카테고리 추가
         UNUserNotificationCenter.current().setNotificationCategories([catagory])
     }
@@ -63,5 +70,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate: UNUserNotificationCenterDelegate{
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler(.alert)
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print("받은 응답 :  \(response.actionIdentifier)")
+        completionHandler()
     }
 }
