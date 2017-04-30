@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //이걸 해주면 UserNoti를 앱 안에서 볼 수 있다.
+        UNUserNotificationCenter.current().delegate = self
+        
+        //하단 정의한 notification category 추가 함수
+        configureUserNotifications()
         return true
     }
 
@@ -40,7 +47,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    private func configureUserNotifications(){
+        //커스텀 형태의 notification 만들기
+        let catagory = UNNotificationCategory(identifier: "myNotificationCategory", actions: [], intentIdentifiers: [], options: [])
+        //카테고리 추가
+        UNUserNotificationCenter.current().setNotificationCategories([catagory])
+    }
 
 
 }
 
+//이걸 해주면 UserNoti를 앱 안에서 볼 수 있다.
+//Notification이 될때 해당 이벤트를 받아 completionHandler로 alert를 보낸다.
+extension AppDelegate: UNUserNotificationCenterDelegate{
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler(.alert)
+    }
+}

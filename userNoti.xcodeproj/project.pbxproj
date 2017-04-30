@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A654C891EB65E0100638C16 /* rick_grimes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4A654C881EB65E0100638C16 /* rick_grimes.gif */; };
+		4A654C911EB65F9900638C16 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A654C901EB65F9900638C16 /* UserNotifications.framework */; };
+		4A654C931EB65F9900638C16 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A654C921EB65F9900638C16 /* UserNotificationsUI.framework */; };
+		4A654C961EB65F9900638C16 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A654C951EB65F9900638C16 /* NotificationViewController.swift */; };
+		4A654C991EB65F9900638C16 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A654C971EB65F9900638C16 /* MainInterface.storyboard */; };
+		4A654C9D1EB65F9900638C16 /* MyContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4A654C8E1EB65F9900638C16 /* MyContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4AC998111EB6309800C2300C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC998101EB6309800C2300C /* AppDelegate.swift */; };
 		4AC998131EB6309800C2300C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC998121EB6309800C2300C /* ViewController.swift */; };
 		4AC998161EB6309800C2300C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC998141EB6309800C2300C /* Main.storyboard */; };
@@ -14,7 +20,38 @@
 		4AC9981B1EB6309800C2300C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC998191EB6309800C2300C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4A654C9B1EB65F9900638C16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AC998051EB6309800C2300C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A654C8D1EB65F9900638C16;
+			remoteInfo = MyContentExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A654CA11EB65F9900638C16 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4A654C9D1EB65F9900638C16 /* MyContentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4A654C881EB65E0100638C16 /* rick_grimes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = rick_grimes.gif; path = "../../../Downloads/iOS-Notifications-S3 1/iOS-Notifications/ios10_notifications/rick_grimes.gif"; sourceTree = "<group>"; };
+		4A654C8E1EB65F9900638C16 /* MyContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A654C901EB65F9900638C16 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		4A654C921EB65F9900638C16 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		4A654C951EB65F9900638C16 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		4A654C981EB65F9900638C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4A654C9A1EB65F9900638C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AC9980D1EB6309800C2300C /* userNoti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = userNoti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC998101EB6309800C2300C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AC998121EB6309800C2300C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +62,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4A654C8B1EB65F9900638C16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A654C931EB65F9900638C16 /* UserNotificationsUI.framework in Frameworks */,
+				4A654C911EB65F9900638C16 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AC9980A1EB6309800C2300C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +81,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A654C8F1EB65F9900638C16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A654C901EB65F9900638C16 /* UserNotifications.framework */,
+				4A654C921EB65F9900638C16 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A654C941EB65F9900638C16 /* MyContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4A654C951EB65F9900638C16 /* NotificationViewController.swift */,
+				4A654C971EB65F9900638C16 /* MainInterface.storyboard */,
+				4A654C9A1EB65F9900638C16 /* Info.plist */,
+			);
+			path = MyContentExtension;
+			sourceTree = "<group>";
+		};
 		4AC998041EB6309800C2300C = {
 			isa = PBXGroup;
 			children = (
 				4AC9980F1EB6309800C2300C /* userNoti */,
+				4A654C941EB65F9900638C16 /* MyContentExtension */,
+				4A654C8F1EB65F9900638C16 /* Frameworks */,
 				4AC9980E1EB6309800C2300C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				4AC9980D1EB6309800C2300C /* userNoti.app */,
+				4A654C8E1EB65F9900638C16 /* MyContentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +126,7 @@
 				4AC998121EB6309800C2300C /* ViewController.swift */,
 				4AC998141EB6309800C2300C /* Main.storyboard */,
 				4AC998171EB6309800C2300C /* Assets.xcassets */,
+				4A654C881EB65E0100638C16 /* rick_grimes.gif */,
 				4AC998191EB6309800C2300C /* LaunchScreen.storyboard */,
 				4AC9981C1EB6309800C2300C /* Info.plist */,
 			);
@@ -67,6 +136,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4A654C8D1EB65F9900638C16 /* MyContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A654C9E1EB65F9900638C16 /* Build configuration list for PBXNativeTarget "MyContentExtension" */;
+			buildPhases = (
+				4A654C8A1EB65F9900638C16 /* Sources */,
+				4A654C8B1EB65F9900638C16 /* Frameworks */,
+				4A654C8C1EB65F9900638C16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyContentExtension;
+			productName = MyContentExtension;
+			productReference = 4A654C8E1EB65F9900638C16 /* MyContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4AC9980C1EB6309800C2300C /* userNoti */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AC9981F1EB6309800C2300C /* Build configuration list for PBXNativeTarget "userNoti" */;
@@ -74,10 +160,12 @@
 				4AC998091EB6309800C2300C /* Sources */,
 				4AC9980A1EB6309800C2300C /* Frameworks */,
 				4AC9980B1EB6309800C2300C /* Resources */,
+				4A654CA11EB65F9900638C16 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4A654C9C1EB65F9900638C16 /* PBXTargetDependency */,
 			);
 			name = userNoti;
 			productName = userNoti;
@@ -94,6 +182,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = harry;
 				TargetAttributes = {
+					4A654C8D1EB65F9900638C16 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = E6ZFU87U28;
+						ProvisioningStyle = Automatic;
+					};
 					4AC9980C1EB6309800C2300C = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = E6ZFU87U28;
@@ -115,17 +208,27 @@
 			projectRoot = "";
 			targets = (
 				4AC9980C1EB6309800C2300C /* userNoti */,
+				4A654C8D1EB65F9900638C16 /* MyContentExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4A654C8C1EB65F9900638C16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A654C991EB65F9900638C16 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AC9980B1EB6309800C2300C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4AC9981B1EB6309800C2300C /* LaunchScreen.storyboard in Resources */,
 				4AC998181EB6309800C2300C /* Assets.xcassets in Resources */,
+				4A654C891EB65E0100638C16 /* rick_grimes.gif in Resources */,
 				4AC998161EB6309800C2300C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +236,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4A654C8A1EB65F9900638C16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A654C961EB65F9900638C16 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AC998091EB6309800C2300C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,7 +255,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4A654C9C1EB65F9900638C16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A654C8D1EB65F9900638C16 /* MyContentExtension */;
+			targetProxy = 4A654C9B1EB65F9900638C16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		4A654C971EB65F9900638C16 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A654C981EB65F9900638C16 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		4AC998141EB6309800C2300C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -164,6 +291,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4A654C9F1EB65F9900638C16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = E6ZFU87U28;
+				INFOPLIST_FILE = MyContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.websori.userNoti.MyContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4A654CA01EB65F9900638C16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = E6ZFU87U28;
+				INFOPLIST_FILE = MyContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.websori.userNoti.MyContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		4AC9981D1EB6309800C2300C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -260,9 +413,11 @@
 		4AC998201EB6309800C2300C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E6ZFU87U28;
 				INFOPLIST_FILE = userNoti/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.websori.userNoti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,9 +428,11 @@
 		4AC998211EB6309800C2300C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E6ZFU87U28;
 				INFOPLIST_FILE = userNoti/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.websori.userNoti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,6 +443,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4A654C9E1EB65F9900638C16 /* Build configuration list for PBXNativeTarget "MyContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A654C9F1EB65F9900638C16 /* Debug */,
+				4A654CA01EB65F9900638C16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		4AC998081EB6309800C2300C /* Build configuration list for PBXProject "userNoti" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -302,6 +467,7 @@
 				4AC998211EB6309800C2300C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
